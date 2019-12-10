@@ -1,5 +1,5 @@
-SELECT *
+SELECT Country, COUNT(*)AS num_students
 FROM Students
-WHERE Count(*) > 10
 GROUP BY Country
+HAVING Count(*) > 10
 ORDER BY Count(*) DESC;
